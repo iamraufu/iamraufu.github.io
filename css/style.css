@@ -1,0 +1,265 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1a202c;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link-title,
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.nav-link-title>span {
+    color: #f56565;
+}
+
+.nav-links {
+    margin: 1rem 0;
+}
+
+.nav-link {
+    padding: 0 1rem;
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 30px;
+    color: #102940;
+}
+
+.about-container {
+    margin: 4rem auto;
+    padding: 1rem 0;
+    background-color: #f2f2f2;
+    color: black;
+    max-width: 650px;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px 2px #f2f2f2;
+}
+
+.hero-image {
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: block;
+    border-radius: 50%;
+    max-width: 50%;
+    height: auto;
+}
+
+.title,
+.details,
+.description {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 1rem;
+}
+
+.description {
+    line-height: 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-image {
+    width: 30px;
+    height: 30px;
+    margin: 0 2rem;
+}
+
+.research-interest-container {
+    padding: 1rem;
+    border: 1px solid #f2f2f2;
+    border-radius: 15px;
+}
+
+.institution-items-container {
+    display: flex;
+}
+
+.institution-items {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.institution-name,
+.degree-name {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.institute-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    padding: 1rem;
+    border: 1px solid grey;
+    border-radius: 15px;
+    box-shadow: rgb(196 196 196 / 30%) 0px 5px 15px;
+}
+
+.institute-image:hover {
+    background-color: #f2f2f2;
+}
+
+.experience-container {
+    padding: 1rem 0;
+}
+
+.skills-container {
+    margin: 4rem auto;
+    padding: 2rem 0;
+    background-color: #f2f2f2;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px 2px #f2f2f2;
+}
+
+.skills-title,
+.research-interest-title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    color: #102940;
+}
+
+.research-interest-title {
+    color: #f56565;
+    font-size: 20px;
+    text-align: left;
+}
+
+li {
+    list-style: none;
+    margin: 0.8rem 0;
+}
+
+.courses {
+    margin: 2rem auto;
+    padding: 1rem 0;
+}
+
+#course-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 2rem 0;
+    cursor: pointer;
+}
+
+#course-table td,
+#course-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#course-table th {
+    padding: 12px 0;
+    text-align: center;
+    background-color: #f56565;
+    color: #102940;
+}
+
+#course-table tbody:nth-child(even) {
+    background-color: #5885AF;
+    color: black;
+    font-weight: bold;
+}
+
+#course-table tr:hover {
+    background-color: #274472;
+    color: white
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.table-course-links {
+    color: #000;
+}
+
+.honors-interest-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.honors-container,
+.interest-container {
+    margin: 1rem 0;
+    padding: 1rem;
+    width: 100%;
+    min-height: 200px;
+    background-color: #f2f2f2;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px 2px #f2f2f2;
+}
+
+.honors-container>h2,
+.interest-container>h2 {
+    text-align: center;
+}
+
+@media (max-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+    .nav-link-title,
+    .nav-link {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .institution-items {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1180px;
+    }
+}
